@@ -1,0 +1,105 @@
+html {
+	font-family: 'Lucida Console', 'Courier New', monospace;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #3c3c3c;
+	color: white;
+}
+
+.nav-bar {
+	margin: 0em 0em 1em 0em;
+	padding: 1em 0em;
+	background-color: #0c0c0c;
+}
+
+.logo-loop-container {
+	position: relative;
+}
+
+img.logo {
+	width: 32px;
+	padding-right: 0.5em;
+	margin: -0.2em;
+}
+
+img.logo:last-child {
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: logo-blink 10s infinite;
+}
+
+.nav-bar ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	align-content: center;
+	display: flex;
+}
+
+.nav-bar ul li {
+	display: inline-block;
+	display: inline;
+	margin: 0em 0.8em;
+}
+
+.nav-bar--link {
+	color: #09ff00;
+	text-decoration: none;
+}
+
+.nav-bar--link:hover {
+	color: white;
+}
+
+.blinking-underscore::after {
+	content: '_';
+	visibility: hidden;
+}
+
+.blinking-underscore:hover::after {
+	visibility: visible;
+	animation: blink 1s infinite;
+}
+
+@keyframes logo-blink {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0.6;
+	}
+	30% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
