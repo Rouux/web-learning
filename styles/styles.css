@@ -56,6 +56,11 @@ img.logo:last-child {
 	color: white;
 }
 
+.always-blinking-underscore::after {
+	content: '_';
+	animation: blink 1.6s infinite;
+}
+
 .blinking-underscore::after {
 	content: '_';
 	visibility: hidden;
