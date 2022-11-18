@@ -8,6 +8,23 @@
 	margin: 1em;
 }
 
+.terminal-header {
+	border-radius: 5px 5px 0px 0px;
+	border: 2px solid #ddd;
+	background-color: #ddd;
+	color: black;
+	font-size: 0.8em;
+	display: flex;
+}
+
+.terminal-header button {
+	padding: 0;
+	border: none;
+	background: none;
+	color: inherit;
+	font: inherit;
+}
+
 .terminal-dots--wrapper {
 	margin: 0em 2em 0em 0em;
 	display: flex;
@@ -19,15 +36,6 @@
 	border-radius: 50%;
 	display: inline-block;
 	margin: 0em 0em 0em 0.2em;
-}
-
-.terminal-header {
-	border-radius: 5px 5px 0px 0px;
-	border: 2px solid #ddd;
-	background-color: #ddd;
-	color: black;
-	font-size: 0.8em;
-	display: flex;
 }
 
 .terminal-body {
@@ -51,6 +59,11 @@
 	background: none;
 	color: inherit;
 	font: inherit;
+}
+
+.terminal-body button:hover {
+	background-color: blue;
+	color: white;
 }
 
 .terminal-body > p::before {
